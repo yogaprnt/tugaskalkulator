@@ -20,4 +20,8 @@ function calc()
                     document.getElementById('result').value = n1/n2;
                 }
                 
+                if(oper === 'X')
+                {
+                    document.getElementById('result').value = n1*n2;
+                }
             }
