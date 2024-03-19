@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Belajar</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+      }
+
+      input[type="text"],
+      select,
+      button {
+        width: 200px;
+        padding: 10px;
+        font-size: 16px;
+        margin: 5px;
+      }
+
+      button {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+
+      button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Calculator</h1>
+    <input type="text" id="n1" placeholder="Berikan Angka Kamu" /><br /><br />
+    <input type="text" id="n2" placeholder="Berikan Angka Kamu" /><br /><br />
+
+    <select id="operators">
+      <option value="+">+</option>
+      <option value="-">-</option>
+      <option value="/">/</option>
+      <option value="X">X</option>
+      <option value="%">%</option>
+    </select>
+
+    <button onclick="calc();">=</button>
+    <input type="text" id="result" placeholder="Hasil" />
+
+    <script src="script.js"></script>
+  </body>
+</html>
